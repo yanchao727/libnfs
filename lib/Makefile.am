@@ -15,9 +15,8 @@ libnfs_la_SOURCES = \
 	socket.c
 
 libnfs_la_LIBADD = \
-	$(abs_top_srcdir)/mount/libmount.la
-	
-#$(abs_top_srcdir)/portmap/libportmap.la \
-#$(abs_top_srcdir)/nfs/libnfs.la \
-#$(abs_top_srcdir)/rquota/librquota.la 
+	$(abs_top_srcdir)/mount/libmount.la \
+	$(abs_top_srcdir)/nfs/libnfs.la \
+	$(abs_top_srcdir)/portmap/libportmap.la \
+	$(abs_top_srcdir)/rquota/librquota.la 
 
