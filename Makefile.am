@@ -1,2 +1,2 @@
-SUBDIRS = mount nfs portmap lib . $(MAYBE_EXAMPLES)
+SUBDIRS = mount nfs portmap lib include . $(MAYBE_EXAMPLES)
 

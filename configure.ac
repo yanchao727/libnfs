@@ -43,6 +43,7 @@ AC_SUBST(MAYBE_EXAMPLES)
 
 #output
 AC_CONFIG_FILES([Makefile]
+                [include/Makefile]
                 [lib/Makefile]
                 [mount/Makefile]
                 [nfs/Makefile]
