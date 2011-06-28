@@ -49,7 +49,7 @@ AC_CONFIG_FILES([Makefile]
                 [nfs/Makefile]
                 [portmap/Makefile]
                 [rquota/Makefile]
-                [$config_examples]
+                [examples/Makefile]
                )
 
 AC_OUTPUT
