@@ -17,6 +17,8 @@ if test "$SAVE_CFLAGS" = "x"; then
   CFLAGS=""
 fi
 
+AC_CHECK_HEADERS([sys/filio.h])
+
 # option: logdir
 AC_ARG_WITH([logdir],
 	    [AC_HELP_STRING([--with-logdir=DIR],
