@@ -17,6 +17,10 @@ if test "$SAVE_CFLAGS" = "x"; then
   CFLAGS=""
 fi
 
+AC_CHECK_PROG([HAVE_RPCGEN], [rpcgen], [yes], [no])
+if test x$HAVE_RPCGEN != xyes; then
+  AC_MSG_ERROR([Can not find required program])
+fi
 
 # option: logdir
 AC_ARG_WITH([logdir],
