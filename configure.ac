@@ -17,7 +17,6 @@ if test "$SAVE_CFLAGS" = "x"; then
   CFLAGS=""
 fi
 
-AC_CHECK_HEADERS([sys/filio.h])
 
 # option: logdir
 AC_ARG_WITH([logdir],
@@ -48,6 +47,7 @@ case $host in
     RPCGENFLAGS=-DU_INT64_PLATTFORM_TYPE="u_int64_t"
     ;;
   *solaris*)
+    AC_CHECK_HEADERS([sys/filio.h])
     if test x$ENABLE_EXAMPLES = xyes; then
       AC_CHECK_LIB([socket], [main], , [AC_MSG_ERROR([Can not find required library])])
       AC_CHECK_LIB([nsl],    [main], , [AC_MSG_ERROR([Can not find required library])])
